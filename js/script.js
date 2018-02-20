@@ -35,7 +35,7 @@ function search(requestUrl) {
       for (var pageID in jsonQuery) {
 
 
-        htmlCode += '<a href="#" onclick="pageOpener()"  id="https://en.m.wikipedia.org/?curid=' + jsonQuery[pageID].pageid;
+        htmlCode += '<a href="#" onclick="pageOpener(this)"  id="https://en.m.wikipedia.org/?curid=' + jsonQuery[pageID].pageid;
         htmlCode += '"   class="col-sm-12 filelink content">';
         htmlCode += '<div class="col-sm-12"><div class="row"> <div class="col-sm-12">';
         htmlCode += '<h4>' + jsonQuery[pageID].title + '</h4>';
@@ -69,17 +69,13 @@ $(".randomButton").click(function() {
 });
 
 
-function pageOpener() {
-  $("a").click(function() {
-    var link = $(this).prop('id');
+function pageOpener(element) {
+
+    var link = $(element).prop('id');
     var htmlContent = '<div class="embed-responsive col-12 iframeStyle embed-responsive-16by9"><iframe id="foo" class="embed-responsive-item" src="' + link + '" allowfullscreen></iframe></div>';
     $(".randomArticle").html(htmlContent);
     $(".resultArea").hide(400);
     $(".randomArticle").show(400);
-
     $('#foo').contents().find('form').html();
-
-
-  });
-
+  
 }
