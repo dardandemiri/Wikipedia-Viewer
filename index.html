@@ -16,61 +16,64 @@
 
 <body>
 
-  <div class="container">
-    <div class="row ">
-      <div class="col-sm-12 logo d-flex justify-content-center">
-        <img style="height:300px;" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/31/Puzzlesphere-ps-realign-letters-plus-bold-test.svg/892px-Puzzlesphere-ps-realign-letters-plus-bold-test.svg.png" alt="">
+<div class="container-fluid headContainer">
+
+    <div class="container ">
+      <div class="row ">
+        <div class="col-sm-12 logo d-flex justify-content-center">
+          <img style="height:300px;" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/31/Puzzlesphere-ps-realign-letters-plus-bold-test.svg/892px-Puzzlesphere-ps-realign-letters-plus-bold-test.svg.png" alt="">
+        </div>
       </div>
+      <header class="row navBar">
+        <div class="col-sm-2 col-sm-offset-2 smallLogo">
+          <img class="img-fluid logoImg" src="img/logo.png" alt="">
+        </div>
+        <div class="col-sm-6 searchDiv">
+          <input class=" searchInput form-control" type="text" name="search" value="" placeholder="Search the whole Wikipedia">
+        </div>
+        <div class="col-sm-1 col-6 searchBtnDiv">
+          <button class="btn btn-success searchButton" type="button" name="button"><i class="fas fa-search"></i></button>
+
+        </div>
+
+        <div class="col-sm-1 col-6 randomDiv">
+          <button class="btn btn-primary randomButton" type="button" name="button"><i class="fas fa-random"></i></button>
+
+        </div>
+
+
+      </header>
+      <section class="alerts row">
+
+
+        <div class="col-sm-12 alert alert-danger text-center" role="alert">
+          Please write what you are searching for!
+        </div>
+
+      </section>
+
+      <section class="row resultArea">
+        <div class="col-sm-12">
+          <div class="row">
+            <div class="col-sm-12">
+              <h4></h4>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+
+              <p></p>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
     </div>
-    <header class="row navBar">
-      <div class="col-sm-2 col-sm-offset-2 smallLogo">
-        <img class="img-fluid logoImg" src="img/logo.png" alt="">
-      </div>
-      <div class="col-sm-6 searchDiv">
-        <input class=" searchInput form-control" type="text" name="search" value="" placeholder="Search the whole Wikipedia">
-      </div>
-      <div class="col-sm-1 searchBtnDiv">
-        <button class="btn btn-success searchButton" type="button" name="button"><i class="fas fa-search"></i></button>
-
-      </div>
-
-      <div class="col-sm-1 randomDiv">
-        <button class="btn btn-primary randomButton" type="button" name="button"><i class="fas fa-random"></i></button>
-
-      </div>
-
-
-    </header>
-    <section class="alerts row">
-
-
-      <div class="col-sm-12 alert alert-danger text-center" role="alert">
-        Please write what you are searching for!
-      </div>
-
-    </section>
-
-    <section class="row resultArea">
-      <div class="col-sm-12">
-        <div class="row">
-          <div class="col-sm-12">
-            <h4></h4>
-
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-
-            <p></p>
-
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-
-  </div>
+</div>
 
   <section class="container-fluid randomArticle">
 
