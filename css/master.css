@@ -1,3 +1,6 @@
+html{
+  height: 100vh;
+}
 
 .header{
   background-image: url("../img/2.jpg");
@@ -39,6 +42,7 @@ header{
 .smallLogo img{
   height:80px;
   display: none;
+  margin: 0 0 0 auto;
 }
 
 
@@ -71,4 +75,37 @@ p{
 
 h4{
   padding-top: 10px;
+}
+
+header-container,header-chrome{
+  display: none;
+}
+
+.iframeStyle, .randomArticle{
+  height: 87vh;
+}
+
+@media(max-width:576px){
+  .smallLogo img{
+    height:70px;
+    margin: 0 auto;
+  }
+  header {
+    margin-top: 2vh;
+  }
+  .randomArticle{
+    margin-top: -56px;
+  }
+
+}
+.headContainer{
+  background-color: white;
+}
+
+.randomArticle{
+  margin-top: -56px;
+  position: absolute;
+  left: 0px;
+  z-index: -1;
+  width: 98vw;
 }
