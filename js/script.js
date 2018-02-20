@@ -35,7 +35,7 @@ function search(requestUrl) {
       for (var pageID in jsonQuery) {
 
 
-        htmlCode += '<a href="#" onclick="pageOpener()"  id="http://en.wikipedia.org/?curid=' + jsonQuery[pageID].pageid;
+        htmlCode += '<a href="#" onclick="pageOpener()"  id="https://en.wikipedia.org/?curid=' + jsonQuery[pageID].pageid;
         htmlCode += '"   class="col-sm-12 filelink content">';
         htmlCode += '<div class="col-sm-12"><div class="row"> <div class="col-sm-12">';
         htmlCode += '<h4>' + jsonQuery[pageID].title + '</h4>';
