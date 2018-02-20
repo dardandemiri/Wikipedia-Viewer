@@ -64,19 +64,22 @@ $(".randomButton").click(function() {
   $(".logoImg").css("display", "block");
   $(".logo img").hide(400);
 
-  var htmlContent = '<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://en.m.wikipedia.org/wiki/Special:Random" allowfullscreen></iframe></div>';
+  var htmlContent = '<div class="embed-responsive col-12 embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://en.m.wikipedia.org/wiki/Special:Random" allowfullscreen></iframe></div>';
   $(".randomArticle").html(htmlContent);
 });
 
 
 function pageOpener() {
   $("a").click(function() {
-      var link = $(this).prop('id');
-      var htmlContent = '<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="' + link + '" allowfullscreen></iframe></div>';
-      $(".randomArticle").html(htmlContent);
-      $(".resultArea").hide(400);
-      $(".randomArticle").show(400);
-  });
+    var link = $(this).prop('id');
+    var htmlContent = '<div class="embed-responsive col-12 iframeStyle embed-responsive-16by9"><iframe id="foo" class="embed-responsive-item" src="' + link + '" allowfullscreen></iframe></div>';
+    $(".randomArticle").html(htmlContent);
+    $(".resultArea").hide(400);
+    $(".randomArticle").show(400);
 
+    $('#foo').contents().find('form').html();
+
+
+  });
 
 }
