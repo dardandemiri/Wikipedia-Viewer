@@ -35,7 +35,7 @@ function search(requestUrl) {
       for (var pageID in jsonQuery) {
 
 
-        htmlCode += '<a href="#" onclick="pageOpener()"  id="https://en.wikipedia.org/?curid=' + jsonQuery[pageID].pageid;
+        htmlCode += '<a href="#" onclick="pageOpener()"  id="https://en.m.wikipedia.org/?curid=' + jsonQuery[pageID].pageid;
         htmlCode += '"   class="col-sm-12 filelink content">';
         htmlCode += '<div class="col-sm-12"><div class="row"> <div class="col-sm-12">';
         htmlCode += '<h4>' + jsonQuery[pageID].title + '</h4>';
@@ -64,7 +64,7 @@ $(".randomButton").click(function() {
   $(".logoImg").css("display", "block");
   $(".logo img").hide(400);
 
-  var htmlContent = '<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://en.wikipedia.org/wiki/Special:Random" allowfullscreen></iframe></div>';
+  var htmlContent = '<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://en.m.wikipedia.org/wiki/Special:Random" allowfullscreen></iframe></div>';
   $(".randomArticle").html(htmlContent);
 });
 
